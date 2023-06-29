@@ -1,3 +1,8 @@
+This is the repository containing the code used in : 
+Mauduit E., Zarka P. et al, "Discovery of Jovian radio bursts related to Ganymede and the main aurora, and implications on Alfvénic electron acceleration", Nature Comm, in revision
+
+
+
 --------------------
 Figures : directory containing the python code used to produce the figures of the article, along with the saveset containing the data.
 --------------------
