@@ -60,7 +60,7 @@ def inboxio (x,y):
     else :
         return (False)
 
-## Contour Ganymède
+## Contours Ganymède
 
 GaAcml=[285.,340,340,285,285]
 GaAphi=[195.,195,240,240,195]
@@ -81,11 +81,8 @@ def inboxgan(x,y):
     #Gan A
     if ((x <= 340.5) and (x >= 284.5) and (y <= 240.5) and (y >= 194.5)):
         return(True)
-    #Gan B orig
+    #Gan B 
     elif ((x <= 175.5) and (x >= 109.5) and (y <= 100.5) and (y >= 74.5)) :
-        return True
-    #Gan etendu
-    elif ((x <= 204.) and (x >= 109.5) and (y <= 100.5) and (y >= 74.5)) :
         return True
     #Gan B'
     elif ((x <= 170.5) and (x >= 124.5) and (y <= 75.5) and (y >= 24.5)) :
@@ -255,7 +252,7 @@ max_gan=np.quantile(carte_gan,0.95)
 
 ## Io - CML : plots io phase coordinates with respect to cml coordinates onto Io emissions probability map
 
-def io(xlh,ylh, xgalh, ygalh,xrh,yrh,xgarh,ygarh,legends, markers,times_lh=None,times_rh=None, date=None,slope_lh=None,slope_rh=None,slope_max=None,slope_min=None):
+def io(xlh,ylh, xgalh, ygalh,xrh,yrh,xgarh,ygarh,times_lh=None,times_rh=None, date=None,slope_lh=None,slope_rh=None,slope_max=None,slope_min=None):
     ax=plt.gca()
     im=ax.imshow(carte_io, origin='lower',extent=[0,360,0,360], vmax=max_io,cmap='gray', alpha=0.8)
     ax.tick_params(axis='both', which='major', labelsize=20)
@@ -318,7 +315,7 @@ def io(xlh,ylh, xgalh, ygalh,xrh,yrh,xgarh,ygarh,legends, markers,times_lh=None,
 
 ### Gan-CML : plots Ganymede phase coordinates with respect to cml coordinates onto Ganymede emissions probability map in different colors whereas it is Io or non-Io emissions
 
-def gan(xlh,ylh,xiolh,yiolh,xrh,yrh,xiorh,yiorh,legends, markers,times_lh=None,times_rh=None,date=None,slope_lh=None,slope_rh=None,slope_max=None,slope_min=None):
+def gan(xlh,ylh,xiolh,yiolh,xrh,yrh,xiorh,yiorh,times_lh=None,times_rh=None,date=None,slope_lh=None,slope_rh=None,slope_max=None,slope_min=None):
     ax=plt.gca()
     im=ax.imshow(carte_gan, origin='lower',extent=[0,360,0,360],vmax=max_gan,cmap='gray',alpha=0.8)
     ax.tick_params(axis='both', which='major', labelsize=20)
