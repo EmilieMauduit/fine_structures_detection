@@ -1,5 +1,5 @@
 This is the repository containing the code used in : 
-Mauduit E., Zarka P. et al, "Discovery of Jovian radio bursts related to Ganymede and the main aurora, and implications on Alfvénic electron acceleration", Nature Comm, in revision
+Mauduit, E., Zarka, P. et al. Drifting discrete Jovian radio bursts reveal acceleration processes related to Ganymede and the main aurora., Nat Commun 14, 5981 (2023). https://doi.org/10.1038/s41467-023-41617-8
 
 
 
